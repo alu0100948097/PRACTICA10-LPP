@@ -12,5 +12,9 @@ class Alimentos
 	def to_s
         "(#{@alimento}, #{@proteinas}, #{@glucidos}, #{@grasas})"
     end
+	
+	def valor_ener
+        (@glucidos*4) + (@grasas*9) + (@proteinas*4)
+    end
    
 end
