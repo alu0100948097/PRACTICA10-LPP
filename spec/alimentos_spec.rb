@@ -12,7 +12,9 @@ describe Alimentos do
   end
   
   describe "# almacenamiento de datos de un alimento" do
-        context "Existiendo los datos del alimento" do    
+  
+        context "Existiendo los datos del alimento" do
+		
             it "Se almacena correctamente el nombre del alimento" do
                 expect(@alimentos.alimento).to eq("Huevo frito")
                 expect(@alimentos_2.alimento).to eq("Leche Vaca")
@@ -52,6 +54,7 @@ describe Alimentos do
     end
 	
 	context "Existiendo métodos de la clase" do
+	
         describe "# visualización de datos de un alimento" do
             it "Se visualizan correctamente los datos del alimento" do
                 expect(@alimentos.to_s).to eq("(Huevo frito, 14.1, 0.0, 19.5)")
@@ -60,6 +63,17 @@ describe Alimentos do
                 expect(@alimentos_4.to_s).to eq("(Cerdo, 21.5, 0.0, 6.3)")
                 expect(@alimentos_5.to_s).to eq("(Ternera, 21.1, 0.0, 6.3)")
                 expect(@alimentos_6.to_s).to eq("(Pollo, 20.6, 0.0, 5.6)")
+            end
+        end
+		
+		describe "# valor energetico del alimento" do
+            it "Se calcula correctamente valor_ener" do
+                expect(@alimentos.valor_ener).to eq(231.9)
+                expect(@alimentos_2.valor_ener).to eq(61.2)
+                expect(@alimentos_3.valor_ener).to eq(69.0)
+                expect(@alimentos_4.valor_ener).to eq(142.7)
+                expect(@alimentos_5.valor_ener).to eq(141.1)
+                expect(@alimentos_6.valor_ener).to eq(132.8)
             end
         end
     end
