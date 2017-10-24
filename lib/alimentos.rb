@@ -8,5 +8,9 @@ class Alimentos
       @glucidos = glucidos
       @grasas = grasas
     end
+	
+	def to_s
+        "(#{@alimento}, #{@proteinas}, #{@glucidos}, #{@grasas})"
+    end
    
 end
