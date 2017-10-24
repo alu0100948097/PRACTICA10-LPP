@@ -50,5 +50,18 @@ describe Alimentos do
             end
         end
     end
+	
+	context "Existiendo métodos de la clase" do
+        describe "# visualización de datos de un alimento" do
+            it "Se visualizan correctamente los datos del alimento" do
+                expect(@alimentos.to_s).to eq("(Huevo frito, 14.1, 0.0, 19.5)")
+                expect(@alimentos_2.to_s).to eq("(Leche Vaca, 3.3, 4.8, 3.2)")
+                expect(@alimentos_3.to_s).to eq("(Yogurt, 3.8, 4.9, 3.8)")
+                expect(@alimentos_4.to_s).to eq("(Cerdo, 21.5, 0.0, 6.3)")
+                expect(@alimentos_5.to_s).to eq("(Ternera, 21.1, 0.0, 6.3)")
+                expect(@alimentos_6.to_s).to eq("(Pollo, 20.6, 0.0, 5.6)")
+            end
+        end
+    end
 
 end
