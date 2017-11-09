@@ -6,6 +6,20 @@ describe List do
         
         @lista = List.new()
         
+        @lista_2 = List.new()
+        @lista_2.introducir_en_cola!(3)
+        @lista_2.introducir_en_cabeza!(5)
+        
+        @lista_3 = List.new()
+        @lista_3.introducir_en_cola!(7)
+        @lista_3.introducir_en_cabeza!(8)
+        @lista_3.quitar_cabeza!
+        
+        @lista_4 = List.new()
+        @lista_4.introducir_en_cola!(9)
+        @lista_4.introducir_en_cabeza!(10)
+        @lista_4.quitar_cola!
+        
     end
     
     describe "# datos de una lista" do
