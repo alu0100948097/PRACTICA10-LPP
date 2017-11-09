@@ -46,5 +46,24 @@ class List
         
     end
     
+    def quitar_cola!
+        
+        temp=@cola
+        
+        if(tam>0)
+            @cola= cola.next
+            if cola.nil?
+                @cabeza=nil
+                else
+                @cola.prev=nil
+            end
+            temp.next=nil
+            temp.prev=nil
+            @tam-=1
+        end
+        
+        temp
+        
+    end
 	
 end
