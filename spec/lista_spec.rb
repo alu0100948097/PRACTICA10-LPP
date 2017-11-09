@@ -52,6 +52,20 @@ describe List do
             end
         end
         
+        context "Si se establece cola y cabeza en la lista pero se quita cabeza despues" do
+            it "Cola establecida en un principio" do
+                expect(@lista_3.cola.value).to eq(7)
+            end
+            
+            it "Cabeza que coincide con la cola" do
+                expect(@lista_3.cabeza.value).to eq(7)
+            end
+            
+            it "Tamaño de la lista" do
+                expect(@lista_3.tam).to eq(1)
+            end
+        end
+        
     end
         
         context "Existiendo métodos de la clase" do
