@@ -131,9 +131,5 @@ describe List do
                     expect(@lista_5.to_s).to eq("tamaño:8 contenido:(11 4)")
                 end
             end
-            
         end
-        
     end
-    
-end
