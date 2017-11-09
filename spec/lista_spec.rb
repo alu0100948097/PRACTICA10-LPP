@@ -126,6 +126,12 @@ describe List do
                 end
             end
             
+            describe "# Se introduce un string en la lista" do
+                it "Incrementa el tamaño y se introduce el string" do
+                    expect(@lista_5.to_s).to eq("tamaño:8 contenido:(11 4)")
+                end
+            end
+            
         end
         
     end
