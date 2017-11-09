@@ -24,4 +24,12 @@ describe G_alimentos do
         end
     end
     
+    describe "# comprobaciones en relación a la herencia" do
+        context "Realizando una herencia correcta" do
+            it "La superclase de G_alimentos es Alimentos" do
+                expect(G_alimentos.superclass).to be Alimentos
+            end
+        end
+    end
+    
 end
