@@ -24,6 +24,16 @@ describe List do
             end
         end
         
+        context "Existiendo métodos de la clase" do
+            
+            describe "# Se introduce nuevo nodo en la cola" do
+                it "Incrementa el tamaño y se introduce dicho nodo" do
+                    expect(@lista.introducir_en_cola!(24)).to eq(1)
+                end
+            end
+            
+        end
+        
     end
     
 end
