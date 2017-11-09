@@ -11,4 +11,17 @@ describe G_alimentos do
         @g_alimentos_6 = G_alimentos.new("Pollo", 20.6, 0.0, 5.6, "Carnes y derivados")
     end
     
+    describe "# almacenamiento de grupo de un alimento" do
+        context "Existiendo los datos del alimento" do
+            it "Se almacena correctamente el grupo del alimento" do
+                expect(@g_alimentos.grupo).to eq("Huevos, lácteos y helados")
+                expect(@g_alimentos_2.grupo).to eq("Huevos, lácteos y helados")
+                expect(@g_alimentos_3.grupo).to eq("Huevos, lácteos y helados")
+                expect(@g_alimentos_4.grupo).to eq("Carnes y derivados")
+                expect(@g_alimentos_5.grupo).to eq("Carnes y derivados")
+                expect(@g_alimentos_6.grupo).to eq("Carnes y derivados")
+            end
+        end
+    end
+    
 end
