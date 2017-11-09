@@ -55,6 +55,51 @@ describe G_alimentos do
                 expect(@g_alimentos_4.instance_of?(G_alimentos)).to be true
                 expect(@g_alimentos_5.instance_of?(G_alimentos)).to be true
                 expect(@g_alimentos_6.instance_of?(G_alimentos)).to be true
+            end
+            
+            it "El tipo de clase es G_alimentos debido a que responde a sus respectivos métodos" do
+                expect(@g_alimentos.respond_to?:grupo).to be true
+                expect(@g_alimentos.respond_to?(:to_s)).to be true
+                expect(@g_alimentos.respond_to?:alimento).to be true
+                expect(@g_alimentos.respond_to?:proteinas).to be true
+                expect(@g_alimentos.respond_to?:glucidos).to be true
+                expect(@g_alimentos.respond_to?:grasas).to be true
+                expect(@g_alimentos.respond_to?(:valor_ener)).to be true
+                expect(@g_alimentos_2.respond_to?:grupo).to be true
+                expect(@g_alimentos_2.respond_to?(:to_s)).to be true
+                expect(@g_alimentos_2.respond_to?:alimento).to be true
+                expect(@g_alimentos_2.respond_to?:proteinas).to be true
+                expect(@g_alimentos_2.respond_to?:glucidos).to be true
+                expect(@g_alimentos_2.respond_to?:grasas).to be true
+                expect(@g_alimentos_2.respond_to?(:valor_ener)).to be true
+                expect(@g_alimentos_3.respond_to?:grupo).to be true
+                expect(@g_alimentos_3.respond_to?(:to_s)).to be true
+                expect(@g_alimentos_3.respond_to?:alimento).to be true
+                expect(@g_alimentos_3.respond_to?:proteinas).to be true
+                expect(@g_alimentos_3.respond_to?:glucidos).to be true
+                expect(@g_alimentos_3.respond_to?:grasas).to be true
+                expect(@g_alimentos_3.respond_to?(:valor_ener)).to be true
+                expect(@g_alimentos_4.respond_to?:grupo).to be true
+                expect(@g_alimentos_4.respond_to?(:to_s)).to be true
+                expect(@g_alimentos_4.respond_to?:alimento).to be true
+                expect(@g_alimentos_4.respond_to?:proteinas).to be true
+                expect(@g_alimentos_4.respond_to?:glucidos).to be true
+                expect(@g_alimentos_4.respond_to?:grasas).to be true
+                expect(@g_alimentos_4.respond_to?(:valor_ener)).to be true
+                expect(@g_alimentos_5.respond_to?:grupo).to be true
+                expect(@g_alimentos_5.respond_to?(:to_s)).to be true
+                expect(@g_alimentos_5.respond_to?:alimento).to be true
+                expect(@g_alimentos_5.respond_to?:proteinas).to be true
+                expect(@g_alimentos_5.respond_to?:glucidos).to be true
+                expect(@g_alimentos_5.respond_to?:grasas).to be true
+                expect(@g_alimentos_5.respond_to?(:valor_ener)).to be true
+                expect(@g_alimentos_6.respond_to?:grupo).to be true
+                expect(@g_alimentos_6.respond_to?(:to_s)).to be true
+                expect(@g_alimentos_6.respond_to?:alimento).to be true
+                expect(@g_alimentos_6.respond_to?:proteinas).to be true
+                expect(@g_alimentos_6.respond_to?:glucidos).to be true
+                expect(@g_alimentos_6.respond_to?:grasas).to be true
+                expect(@g_alimentos_6.respond_to?(:valor_ener)).to be true
             end    
         end
     end
