@@ -28,5 +28,23 @@ class List
         @tam+=1
         
     end
+    
+    def introducir_en_cabeza!(valor)
+        
+        if(@tam==0)
+            @cabeza=Node.new(valor,nil,nil)
+            @cola= cabeza
+            
+            else
+            @cabeza.next=Node.new(valor,cola,nil)
+            @cabeza.next.prev= cabeza
+            @cabeza= cabeza.next
+            
+        end
+        
+        @tam+=1
+        
+    end
+    
 	
 end
