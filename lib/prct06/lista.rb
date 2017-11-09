@@ -93,5 +93,13 @@ class List
             "Sin valores almacenados."
         end
     end
+    
+    def introducir_string!(valor)
+        
+        for num in (0..valor.length-1)
+            introducir_en_cabeza!(valor[num])
+        end
+        
+    end
 	
 end
