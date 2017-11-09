@@ -1,5 +1,3 @@
-# Práctica de Laboratorio #6. Desarrollo Dirigido por Pruebas (TDD).
-
-Desarrollo Dirigido por Pruebas para la clase alimentos
+# Práctica de Laboratorio #7. POO: Herencia.
 
 Autor: SERGIO FERRERA DE DIEGO
