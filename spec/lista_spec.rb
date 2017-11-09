@@ -38,6 +38,12 @@ describe List do
                 end
             end
             
+            describe "# Se quita nodo de la cola" do
+                it "Disminuye el tamaño y se elimina dicho nodo" do
+                    expect(@lista.quitar_cola!).to eq(nil)
+                end
+            end
+            
         end
         
     end
