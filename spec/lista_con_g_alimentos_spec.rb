@@ -95,8 +95,48 @@ describe List do
                 expect(@lista_4.tam).to eq(1)
             end
         end
-        
     end
     
+    context "Existiendo métodos de la clase" do
+        
+        describe "# Se introduce nuevo nodo en la cola" do
+            it "Incrementa el tamaño y se introduce dicho nodo" do
+                expect(@lista.introducir_en_cola!(@g_alimentos[1])).to eq(1)
+            end
+        end
+        
+        describe "# Se introduce nuevo nodo en la cabeza" do
+            it "Incrementa el tamaño y se introduce dicho nodo" do
+                expect(@lista.introducir_en_cabeza!(@g_alimentos[1])).to eq(1)
+            end
+        end
+        
+        describe "# Se quita nodo de la cola" do
+            it "Disminuye el tamaño y se elimina dicho nodo" do
+                expect(@lista.quitar_cola!).to eq(nil)
+            end
+        end
+        
+        describe "# Se quita nodo de la cabeza" do
+            it "Disminuye el tamaño y se elimina dicho nodo" do
+                expect(@lista.quitar_cabeza!).to eq(nil)
+            end
+        end
+        
+        describe "# Visualización de la cola y cabeza de una lista" do
+            
+            context "Si se ha establecido cabeza y cola" do
+                it "Se visualizan correctamente la cabeza y cola de la lista en ese orden" do
+                    expect(@lista_2.to_s).to eq("tamaño:2 contenido:((Leche Vaca, 3.3, 4.8, 3.2, [Huevos, lácteos y helados]) (Huevo frito, 14.1, 0.0, 19.5, [Huevos, lácteos y helados]))")
+                end
+            end
+            
+            context "Si no se ha establecido cabeza y cola" do
+                it "Se visualiza un mensaje en relación a que no se ha establecido ni cabeza ni cola" do
+                    expect(@lista.to_s).to eq("Sin valores almacenados.")
+                end
+            end
+        end
+    end    
 end
 end
