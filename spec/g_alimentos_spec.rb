@@ -46,6 +46,15 @@ describe G_alimentos do
                 expect(@g_alimentos_4.is_a?(G_alimentos)).to be true
                 expect(@g_alimentos_5.is_a?(G_alimentos)).to be true
                 expect(@g_alimentos_6.is_a?(G_alimentos)).to be true
+            end
+            
+            it "La clase de los objetos es G_alimentos comprobando con instance_of?" do
+                expect(@g_alimentos.instance_of?(G_alimentos)).to be true
+                expect(@g_alimentos_2.instance_of?(G_alimentos)).to be true
+                expect(@g_alimentos_3.instance_of?(G_alimentos)).to be true
+                expect(@g_alimentos_4.instance_of?(G_alimentos)).to be true
+                expect(@g_alimentos_5.instance_of?(G_alimentos)).to be true
+                expect(@g_alimentos_6.instance_of?(G_alimentos)).to be true
             end    
         end
     end
