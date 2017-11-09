@@ -29,6 +29,15 @@ describe G_alimentos do
             it "La superclase de G_alimentos es Alimentos" do
                 expect(G_alimentos.superclass).to be Alimentos
             end
+            
+            it "La clase de los objetos es G_alimentos comprobando con class" do
+                expect(@g_alimentos.class).to be G_alimentos
+                expect(@g_alimentos_2.class).to be G_alimentos
+                expect(@g_alimentos_3.class).to be G_alimentos
+                expect(@g_alimentos_4.class).to be G_alimentos
+                expect(@g_alimentos_5.class).to be G_alimentos
+                expect(@g_alimentos_6.class).to be G_alimentos
+            end
         end
     end
     
