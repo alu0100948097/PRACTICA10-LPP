@@ -28,4 +28,8 @@ class G_alimentos < Alimentos
         @grupo = grupo
     end
     
+    def to_s
+        "(#{@alimento}, #{@proteinas}, #{@glucidos}, #{@grasas}, [#{@grupo}])"
+    end
+    
 end
