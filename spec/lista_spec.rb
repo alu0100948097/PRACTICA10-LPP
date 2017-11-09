@@ -20,6 +20,9 @@ describe List do
         @lista_4.introducir_en_cabeza!(10)
         @lista_4.quitar_cola!
         
+        @lista_5 = List.new()
+        @lista_5.introducir_string!([4,5,6,8,9,7,10,11])
+        
     end
     
     describe "# datos de una lista" do
