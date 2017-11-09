@@ -18,3 +18,14 @@ class Alimentos
     end
    
 end
+
+class G_alimentos < Alimentos
+    
+    attr_reader :grupo
+    
+    def initialize(alimento,proteinas,glucidos,grasas,grupo)
+        super(alimento,proteinas,glucidos,grasas)
+        @grupo = grupo
+    end
+    
+end
