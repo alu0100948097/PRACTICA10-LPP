@@ -44,6 +44,12 @@ describe List do
                 end
             end
             
+            describe "# Se quita nodo de la cabeza" do
+                it "Disminuye el tamaño y se elimina dicho nodo" do
+                    expect(@lista.quitar_cabeza!).to eq(nil)
+                end
+            end
+            
         end
         
     end
