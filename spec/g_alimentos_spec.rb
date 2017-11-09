@@ -38,6 +38,15 @@ describe G_alimentos do
                 expect(@g_alimentos_5.class).to be G_alimentos
                 expect(@g_alimentos_6.class).to be G_alimentos
             end
+            
+            it "La clase de los objetos es G_alimentos comprobando con is_a?" do
+                expect(@g_alimentos.is_a?(G_alimentos)).to be true
+                expect(@g_alimentos_2.is_a?(G_alimentos)).to be true
+                expect(@g_alimentos_3.is_a?(G_alimentos)).to be true
+                expect(@g_alimentos_4.is_a?(G_alimentos)).to be true
+                expect(@g_alimentos_5.is_a?(G_alimentos)).to be true
+                expect(@g_alimentos_6.is_a?(G_alimentos)).to be true
+            end    
         end
     end
     
