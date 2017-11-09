@@ -52,5 +52,51 @@ describe List do
         
     end
     
+    describe "# datos de una lista con alimentos" do
+        
+        context "Si se establece cola y cabeza en la lista" do
+            it "Cola establecida" do
+                expect(@lista_2.cola.value).to eq(@g_alimentos[1])
+            end
+            
+            it "Cabeza establecida" do
+                expect(@lista_2.cabeza.value).to eq(@g_alimentos[2])
+            end
+            
+            it "Tamaño de la lista" do
+                expect(@lista_2.tam).to eq(2)
+            end
+        end
+        
+        context "Si se establece cola y cabeza en la lista pero se quita cabeza despues" do
+            it "Cola establecida en un principio" do
+                expect(@lista_3.cola.value).to eq(@g_alimentos[1])
+            end
+            
+            it "Cabeza que coincide con la cola" do
+                expect(@lista_3.cabeza.value).to eq(@g_alimentos[1])
+            end
+            
+            it "Tamaño de la lista" do
+                expect(@lista_3.tam).to eq(1)
+            end
+        end
+        
+        context "Si se establece cola y cabeza en la lista pero se quita cola despues" do
+            it "Cola que coincide con la cabeza" do
+                expect(@lista_4.cola.value).to eq(@g_alimentos[2])
+            end
+            
+            it "Cabeza establecida en un principio" do
+                expect(@lista_4.cabeza.value).to eq(@g_alimentos[2])
+            end
+            
+            it "Tamaño de la lista" do
+                expect(@lista_4.tam).to eq(1)
+            end
+        end
+        
+    end
+    
 end
 end
