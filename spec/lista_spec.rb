@@ -50,6 +50,15 @@ describe List do
                 end
             end
             
+            describe "# Visualización de la cola y cabeza de una lista" do
+                
+                context "Si no se ha establecido cabeza y cola" do
+                    it "Se visualiza un mensaje en relación a que no se ha establecido ni cabeza ni cola" do
+                        expect(@lista.to_s).to eq("Sin valores almacenados.")
+                    end
+                end
+            end
+            
         end
         
     end
