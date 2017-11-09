@@ -32,6 +32,12 @@ describe List do
                 end
             end
             
+            describe "# Se introduce nuevo nodo en la cabeza" do
+                it "Incrementa el tamaño y se introduce dicho nodo" do
+                    expect(@lista.introducir_en_cabeza!(89)).to eq(1)
+                end
+            end
+            
         end
         
     end
