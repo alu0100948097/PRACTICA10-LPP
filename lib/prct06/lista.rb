@@ -65,5 +65,25 @@ class List
         temp
         
     end
+    
+    def quitar_cabeza!
+        
+        temp=@cabeza
+        
+        if(tam>0)
+            @cabeza= cabeza.prev
+            if cabeza.nil?
+                @cola=nil
+                else
+                @cabeza.next=nil
+            end
+            temp.next=nil
+            temp.prev=nil
+            @tam-=1
+        end
+        
+        temp
+        
+    end
 	
 end
