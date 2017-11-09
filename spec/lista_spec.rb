@@ -115,6 +115,12 @@ describe List do
                         expect(@lista.to_s).to eq("Sin valores almacenados.")
                     end
                 end
+                
+                context "Si se ha establecido cabeza y cola" do
+                    it "Se visualizan correctamente la cabeza y cola de la lista en ese orden" do
+                        expect(@lista_2.to_s).to eq("tamaño:2 contenido:(5 3)")
+                    end
+                end
             end
             
         end
