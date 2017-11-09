@@ -85,5 +85,13 @@ class List
         temp
         
     end
+    
+    def to_s
+        if(tam>0)
+            "tamaño:#{tam} contenido:(#{cabeza.value} #{cola.value})"
+            else
+            "Sin valores almacenados."
+        end
+    end
 	
 end
