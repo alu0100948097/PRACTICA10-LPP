@@ -38,6 +38,22 @@ describe List do
             end
         end
         
+        context "Si se establece cola y cabeza en la lista" do
+            it "Cola establecida" do
+                expect(@lista_2.cola.value).to eq(3)
+            end
+            
+            it "Cabeza establecida" do
+                expect(@lista_2.cabeza.value).to eq(5)
+            end
+            
+            it "Tamaño de la lista" do
+                expect(@lista_2.tam).to eq(2)
+            end
+        end
+        
+    end
+        
         context "Existiendo métodos de la clase" do
             
             describe "# Se introduce nuevo nodo en la cola" do
