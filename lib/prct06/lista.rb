@@ -1,5 +1,3 @@
-require 'prct06/nodo'
-
 class List
 	
 	attr_reader :cola, :cabeza, :tam
