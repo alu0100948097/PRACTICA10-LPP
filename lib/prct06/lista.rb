@@ -1,5 +1,7 @@
 class List
 	
+    include Enumerable
+    
 	attr_reader :cola, :cabeza, :tam
 	
 	def initialize
@@ -9,6 +11,15 @@ class List
 	   @tam=0
 	   
 	end
+    
+    def each
+        yield temp = @cabeza
+        if tam!=0
+            for i in (1 ..tam-1)
+                yield temp = temp.prev
+            end
+        end
+    end
     
     def introducir_en_cola!(valor)
         
