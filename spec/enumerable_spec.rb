@@ -29,6 +29,11 @@ describe List do
                     expect(@lista_2.all?).to eq(false)
                 end
                 
+                it "comprobando el metodo any?" do
+                    expect(@lista.any?).to eq(true)
+                    expect(@lista_2.any?).to eq(false)
+                end 
+                
             end
             
         end
