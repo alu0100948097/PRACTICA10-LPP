@@ -11,4 +11,15 @@ describe G_alimentos do
         @g_alimentos_6 = G_alimentos.new("Pollo", 20.6, 0.0, 5.6, "Carnes y derivados")
     end
     
+    context "Haciendo a la clase Alimentos comparable" do
+        
+        describe "# Se compara si un alimento es menor que otro" do
+            it "Devuelve true si el alimento a la izq es menor al de la derch" do
+                expect(@g_alimentos_2 < @g_alimentos).to eq(true)
+                expect(@g_alimentos_4 < @g_alimentos_3).to eq(false)
+            end
+        end
+        
+    end
+    
 end
