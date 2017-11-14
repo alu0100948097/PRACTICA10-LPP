@@ -43,6 +43,11 @@ describe List do
                     expect(@lista.count).to eq(6)
                 end
                 
+                it "comprobando el metodo detect" do
+                    expect(@lista.detect {|i| i.value.alimento=="Pollo"}).to eq(@lista.cabeza)
+                    expect(@lista.find {|i| i.value.alimento=="Huevo frito"}).to eq(@lista.cola)
+                end
+                
             end
             
         end
