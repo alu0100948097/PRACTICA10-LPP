@@ -52,6 +52,10 @@ describe List do
                     expect(@lista.drop(5)).to eq([@lista.cola])
                 end
                 
+                it "comprobando max" do
+                    expect(@lista.max).to eq(@lista.cola)
+                end
+                
             end
             
         end
