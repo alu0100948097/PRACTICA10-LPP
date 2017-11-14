@@ -60,6 +60,10 @@ describe List do
                     expect(@lista.min).to eq(@lista.cola.next)
                 end
                 
+                it "comprobando sort" do
+                    expect(@lista.sort).to eq([@lista.cola.next, @lista.cola.next.next, @lista.cabeza, @lista.cabeza.prev, @lista.cabeza.prev.prev, @lista.cola])
+                end
+                
             end
             
         end
