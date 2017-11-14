@@ -32,6 +32,11 @@ describe List do
                 it "comprobando el metodo any?" do
                     expect(@lista.any?).to eq(true)
                     expect(@lista_2.any?).to eq(false)
+                end
+                
+                it "comprobando el metodo collect" do
+                    expect(@lista.map{|i| i.value.to_s}).to eq([@g_alimentos[5].to_s, @g_alimentos[4].to_s, @g_alimentos[3].to_s, @g_alimentos[2].to_s, @g_alimentos[1].to_s, @g_alimentos[0].to_s])
+                    expect(@lista.collect{|i| i.value.to_s}).to eq([@g_alimentos[5].to_s, @g_alimentos[4].to_s, @g_alimentos[3].to_s, @g_alimentos[2].to_s, @g_alimentos[1].to_s, @g_alimentos[0].to_s])
                 end 
                 
             end
