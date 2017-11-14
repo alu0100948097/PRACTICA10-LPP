@@ -56,6 +56,10 @@ describe List do
                     expect(@lista.max).to eq(@lista.cola)
                 end
                 
+                it "comprobando min" do
+                    expect(@lista.min).to eq(@lista.cola.next)
+                end
+                
             end
             
         end
