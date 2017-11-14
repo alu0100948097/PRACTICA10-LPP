@@ -48,6 +48,10 @@ describe List do
                     expect(@lista.find {|i| i.value.alimento=="Huevo frito"}).to eq(@lista.cola)
                 end
                 
+                it "comprobando drop" do
+                    expect(@lista.drop(5)).to eq([@lista.cola])
+                end
+                
             end
             
         end
