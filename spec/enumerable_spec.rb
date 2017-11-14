@@ -19,5 +19,18 @@ describe List do
             
         
         end
+        
+        context "Haciendo a la lista enumerable" do
+            
+            describe "# Comprueba cada elemento de la lista" do
+                
+                it "comprobando el metodo all?" do
+                    expect(@lista.all?).to eq(true)
+                    expect(@lista_2.all?).to eq(false)
+                end
+                
+            end
+            
+        end
     
 end
