@@ -35,6 +35,14 @@ describe G_alimentos do
             end
         end
         
+        describe "# Se compara si un alimento es mayor o igual que otro" do
+            it "Devuelve true si el alimento a la izq es mayor o igual al de la derch" do
+                expect(@g_alimentos >= @g_alimentos_2).to eq(true)
+                expect(@g_alimentos_6 >= @g_alimentos_5). to eq(false)
+                expect(@g_alimentos_6 >= @g_alimentos_6). to eq(true)
+            end
+        end
+        
     end
     
 end
