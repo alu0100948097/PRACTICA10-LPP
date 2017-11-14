@@ -1,5 +1,4 @@
-require 'prct06/lista'
-require 'prct06/alimentos'
+require 'prct06'
 
 context "Lista en la que se introducen G_alimentos" do
 describe List do

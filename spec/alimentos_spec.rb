@@ -1,4 +1,4 @@
-require 'prct06/alimentos'
+require 'prct06'
 
 describe Alimentos do
 

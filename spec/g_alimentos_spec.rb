@@ -1,4 +1,4 @@
-require 'prct06/alimentos'
+require 'prct06'
 
 describe G_alimentos do
     

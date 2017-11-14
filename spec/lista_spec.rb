@@ -1,4 +1,4 @@
-require 'prct06/lista'
+require 'prct06'
 
 describe List do
     
