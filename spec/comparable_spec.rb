@@ -43,6 +43,13 @@ describe G_alimentos do
             end
         end
         
+        describe "# Se compara si un alimento es igual que otro" do
+            it "Devuelve true si el alimento a la izq es igual al de la derch" do
+                expect(@g_alimentos == @g_alimentos).to eq(true)
+                expect(@g_alimentos == @g_alimentos_6).to eq(false)
+            end
+        end
+        
     end
     
 end
