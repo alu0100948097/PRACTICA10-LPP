@@ -17,6 +17,10 @@ class Alimentos
     def <=>(other)
         valor_ener <=> other.valor_ener
     end
+	
+    def == (other)
+        alimento == other.alimento
+    end
 
     # Método para asignar los datos del alimento
     #
