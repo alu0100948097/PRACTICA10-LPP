@@ -104,6 +104,13 @@ describe Alimentos do
           end
       end
       
+      describe "# calculo del indice glucemico" do
+          it "Se calcula correctamente el indice glucemico" do
+              IG=Sumatorio_IG_idv/@yogurt.g.length
+              expect(IG).to eq(41.38)
+          end
+      end
+      
   end
 
 end
