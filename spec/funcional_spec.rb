@@ -86,6 +86,17 @@ describe Alimentos do
           end
       end
       
+      describe "# calculo del indice glucemico relativo por individuo" do
+          it "Se calcula correctamente el indice glucemico relativo por individuo" do
+              IG_idv=[]
+              for i in (0..@yogurt.AIBC.length-1)
+                  IG_idv << ((@yogurt.AIBC[i]/@glucosa.AIBC[i])*100).round(2)
+                  expect(IG_idv[i]).to eq(((@yogurt.AIBC[i]/@glucosa.AIBC[i])*100).round(2))
+              end
+              
+          end
+      end
+      
   end
 
 end
