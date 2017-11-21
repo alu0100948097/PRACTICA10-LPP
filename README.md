@@ -1,3 +1,3 @@
-# Práctica de Laboratorio #7. POO: Herencia.
+Práctica de Laboratorio #9. Programación Funcional. Funciones de orden superior. 
 
 Autor: SERGIO FERRERA DE DIEGO
