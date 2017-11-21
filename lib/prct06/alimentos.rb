@@ -46,6 +46,20 @@ class Alimentos
 	def valor_ener
         (@glucidos*4) + (@grasas*9) + (@proteinas*4)
     end
+
+    # Método para calcular el Área incremental bajo la curva (AIBC) de un alimento o glucosa, dependiendo de que se le pase por parametro
+    #
+    # @param mediciones vector que contiene mediciones de glucosa o de un alimento
+    def AIBC
+        aibc=Array.new
+        g.each do |x|
+            almacen=Array.new
+            vec_2=(1..x.length-1).to_a.zip(x.drop(1))
+            vec_2.each{ |val|  almacen<<(((val[1]-x[0]+x[val[0]-1]-x[0])/2)*5).round(2)}
+            aibc<<(almacen.reduce :+)
+        end
+        aibc
+    end
    
 end
 
