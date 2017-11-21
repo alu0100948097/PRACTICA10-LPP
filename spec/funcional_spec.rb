@@ -97,6 +97,13 @@ describe Alimentos do
           end
       end
       
+      describe "# calculo del sumatorio de los indices glucemicos relativos por individuo" do
+          it "Se calcula correctamente el sumatorio de los indices glucemicos relativos por individuo" do
+              Sumatorio_IG_idv=IG_idv.reduce :+
+              expect(Sumatorio_IG_idv).to eq(82.76)
+          end
+      end
+      
   end
 
 end
