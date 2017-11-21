@@ -13,6 +13,8 @@ class Alimentos
     
     attr_reader :alimento, :proteinas, :glucidos, :grasas
     
+    attr_accessor :g
+    
     # Método para definir la forma en la que comparar instancias de la clase
     def <=>(other)
         valor_ener <=> other.valor_ener
