@@ -51,6 +51,19 @@ describe Alimentos do
             end
         end
         
+        context "Existiendo método Benchmark" do
+            describe "# Haciendo uso del método benchmark" do
+                it "Benchmark sobre los métodos de ordenación" do
+                    Benchmark.benchmark(CAPTION, 7, FORMAT, ">total:", ">avg:") do |x|
+                        tf = x.report("for:")   { @g_alimentos.ordenar_for }
+                        tt = x.report("each:") { @g_alimentos.ordenar_each }
+                        tu = x.report("sort:")  { @g_alimentos.sort{|x,y| y<=>x} }
+                        [tf+tt+tu, (tf+tt+tu)/3]
+                    end
+                end
+            end
+        end
+        
     end
     
 end
