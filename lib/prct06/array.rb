@@ -25,4 +25,23 @@ class Array
         ordenado
     end
     
+    # Método para ordenador por inserción un array mediante método each
+    def ordenar_each
+        ordenado=Array.new
+        ordenado << self[0]
+        self.drop(1).each do |x|
+            ordenado.each_with_index do |y,i|
+                if x>=y
+                    ordenado.insert(i,x)
+                    break
+                end
+                if i==ordenado.length-1
+                    ordenado << x
+                    break
+                end
+            end
+        end
+        ordenado
+    end
+    
 end
