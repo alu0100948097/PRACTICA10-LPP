@@ -1,3 +1,3 @@
-Práctica de Laboratorio #9. Programación Funcional. Funciones de orden superior. 
+Práctica de Laboratorio #10. Programación Funcional. Benchmarks.
 
 Autor: SERGIO FERRERA DE DIEGO
