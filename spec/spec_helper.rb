@@ -1,2 +1,5 @@
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'prct06'
+require "bundler/setup"
+require "prct06"
+require "benchmark"
+include Benchmark
+

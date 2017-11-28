@@ -1,4 +1,4 @@
-require 'prct06'
+require "spec_helper"
 
 describe G_alimentos do
     

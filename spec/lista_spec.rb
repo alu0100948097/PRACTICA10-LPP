@@ -1,4 +1,4 @@
-require 'prct06'
+require "spec_helper"
 
 describe List do
     

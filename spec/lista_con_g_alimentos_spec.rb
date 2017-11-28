@@ -1,4 +1,4 @@
-require 'prct06'
+require "spec_helper"
 
 context "Lista en la que se introducen G_alimentos" do
 describe List do
