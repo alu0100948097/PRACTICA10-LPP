@@ -31,4 +31,14 @@ describe Alimentos do
         
     end
     
+    context "Existiendo métodos de la clase" do
+        
+        describe "# Ordenación mediante bucles for" do
+            it "Comprobando ordenación con for" do
+                expect(@g_alimentos.ordenar_for).to eq([@g_alimentos[9],@g_alimentos[10],@g_alimentos[11],@g_alimentos[12],@g_alimentos[13],@g_alimentos[14],@g_alimentos[0],@g_alimentos[7],@g_alimentos[8],@g_alimentos[3],@g_alimentos[5],@g_alimentos[4],@g_alimentos[20],@g_alimentos[6],@g_alimentos[15],@g_alimentos[2],@g_alimentos[1],@g_alimentos[21],@g_alimentos[19],@g_alimentos[17],@g_alimentos[18],@g_alimentos[16]])
+            end
+        end
+        
+    end
+    
 end
