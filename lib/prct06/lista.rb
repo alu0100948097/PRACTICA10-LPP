@@ -83,11 +83,7 @@ class List
         
         if(tam>0)
             @cola= cola.next
-            if cola.nil?
-                @cabeza=nil
-                else
-                @cola.prev=nil
-            end
+            @cola.prev=nil
             temp.next=nil
             temp.prev=nil
             @tam-=1
@@ -104,11 +100,7 @@ class List
         
         if(tam>0)
             @cabeza= cabeza.prev
-            if cabeza.nil?
-                @cola=nil
-                else
-                @cabeza.next=nil
-            end
+            @cabeza.next=nil
             temp.next=nil
             temp.prev=nil
             @tam-=1
