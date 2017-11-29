@@ -91,6 +91,9 @@ describe List do
                 it "Incrementa el tamaño y se introduce dicho nodo" do
                     expect(@lista.introducir_en_cola!(24)).to eq(1)
                 end
+                it "Incrementa el tamaño y se introduce dicho nodo en una lista con cola ya existente" do
+                    expect(@lista_5.introducir_en_cola!(24)).to eq(9)
+                end
             end
             
             describe "# Se introduce nuevo nodo en la cabeza" do
